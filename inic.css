@@ -4,103 +4,6 @@
 }
 
 
-
-@media (max-width: 600px) {
-    .header{
-        display: none;
-        
-    } 
-
-    #burguerButton{
-        text-decoration: none;
-        width:15%;
-        height:9%;
-        display:block;
-        position:fixed;
-        background-color:rgba(255, 255, 0, 0);
-        color: white;
-        border: none;
-        font-weight: bold;
-        left:85%;
-        
-    }
-    #burguerButton:hover{
-        color: black;
-    }
-
-    #cross{
-        font-weight: bold;
-        color: grey;
-        display:block;
-        background-color:none;
-        background-color:rgba(255, 255, 0, 0);
-        position: fixed;
-        border: none;
-        left:90%;
-        z-index: 2;
-    }
-
-    #cross:hover{
-        color: black;
-    }
-    .menu{
-        background-color:none;
-        height:260px;
-        color: white;
-        width:100%;
-        text-align: center;
-        position:fixed;
-        z-index: 1;
-
-    }
-
-    #llistaMobile li{
-        background-color:rgba(185, 158, 82, 0.281);;
-        color:black;
-        border: solid grey 2px;
-        border-radius: 25px;
-        width:100%;
-        height:195%;
-        list-style-type: none;
-        font-size: 30px;
-        
-    }
-
-    #llistaMobile li:hover{
-        background-color:grey;
-}
-    #llistaMobile a{
-        text-decoration: none;
-    }
-
-    .inici {
-        width: 100%;
-        background-size: cover;
-    }    
-    .Bio {
-        background-color:whitesmoke;
-        padding-top: 150px;
-        margin-top: -20px;
-        text-align: center;
-        background-image: url("images/fonstard.jpeg");
-       
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        
-        color: whitesmoke;
-        
-        
-    }
-}
-
-@media (min-width: 601px) {
-    #burguerButton{
-        display: none;
-    }    
-}
-
-
 .header{
     background-color: rgba(185, 158, 82, 0.281);
     margin-bottom: 0px;
@@ -155,7 +58,7 @@
   
 
 .rrss{
-    color: ivory;
+    color: grey;
     text-align: right;
     
 }
@@ -163,154 +66,166 @@
 .rrss a {
     padding-right: 1%;;
 }
-.rrss a:visited{
-    color: ivory;
 
-}
 
-.rrss a:hover{
-    color: black;
-}
 
 .inici {
-    height:900px;
     width:100%;
+    height:1040px;
     background-image: url("images/fotonjunts.jpeg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     
+    
 }
 
 
 
-
-#info{
-    position: absolute;
-    bottom: 30%;
-    left:24%;
-    color:whitesmoke;
-    font-size: 340%;
-
+.section{
+    padding-top: 14%;
+    padding-bottom: 10%;
+    
 }
-
-
-
-#spoty {
-    text-decoration: none;
-    position: absolute;
-    bottom: 10%;
-    left:35%;
-    color:whitesmoke;
-    font-size: 340%;
-}
-
-
 
 .Bio {
-    background-color:whitesmoke;
-    padding-top: 150px;
-    margin-top: -20px;
-    text-align: center;
+  
+   
     background-image: url("images/fonscolor.jpeg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     
-    color: whitesmoke;
     
     
 }
 
-#titolBio{
-    font-size:120px;
+.titols{
+    font-size:70px;
+    color:white;
+    text-align:center;
+    padding-bottom: 5%;
+    opacity:70%;;
 }
 
-#bio {
-    padding-top: 80px;
-    font-size: 30px;
-    text-align: justify;
-    width:50%;
-    padding-left: 25%;
+#bio-description {
+    font-size: 230%;
+    text-align:  justify;
+    width:34%;
+    margin-left: 33%;
+    margin-right: 33%;
+    
     line-height: 180%;
     padding-bottom: 80px;
+    color:white;
 
 }
 
-.botiga{
-    height:10%;
-    text-align: center;
-    font-size:40px;
-    padding-top: 5%;
-    padding-bottom: 10%;
+
+
+.membres{
+    
     background-image: url("images/fonstard.jpeg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    width:100%;
     
        
 }
 
-.botiga h1{
-    padding-bottom: 10%;
-    color: whitesmoke;
+
+.membres-section-img{
+    border:solid white;
+    width:40%;
+    margin-bottom: 10%;    
+    position:relative;
+    left:30%;
 }
-
-
-
-
-
-.samarreta {
-    background-color: whitesmoke;
-    height:40%;
-    width:35%;
-    border: solid black 5px;
-    margin-bottom: 5%;
-    margin-left: 32%;
-    transition: transform 2s;
-}
-
-.samarreta:hover{
-    transform: scale(1.1) ;
-}
-
-.samarreta img{
-    height:100%;
-    width:100%;
-}
-
-.totebag {
-    background-color: black;
-    
-    color: whitesmoke;
-    height:40%;
-    width:35%;
-    border: solid whitesmoke 5px;
-    margin-bottom: 5%;
-    margin-left: 32%;
-    transition: transform 2s;
-
-
-}
-.totebag:hover{
-    transform: scale(1.1) ;
-
-}
-.totebag img{
-    height:100%;
+.membres-image{
     width:100%;
     
+ 
 }
 
+
+.overlay{
+    
+    background-color: rgba(0,0,0, 0.8);
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    opacity:0;
+    transition: .5s ease;
+    backdrop-filter: blur(10px);
+
+}
+.membres-section-img:hover .overlay{
+    opacity:1;
+}
+.membres-bio{
+    font-family:"Satisfy";
+    font-size: 30px;
+    color:white;
+    position:absolute;
+    top:10%;
+    right:5%;
+    left:5%;
+    height:100%;
+    text-align:justify;
+    text-align:center;
+    line-height: 3.5;   
+
+}
+
+
+.concerts-image{
+    width:30%;
+    position: relative;
+    left:65%;
+}
+
+.concerts-bio{
+    font-family:verdana;
+    font-size:20px;
+    font-size-adjust: 1,58;
+    color:white;
+    text-align:justify;
+    text-align:center;
+    line-height: 2.0;
+    
+    width:50%;
+    position:relative;
+    top: 9em;
+}
+
+
+.concerts{
+    background-image: url("images/fum.JPG");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    background-color: rgba(0, 0, 0, 0.904);
+}
+
+.concerts-section{
+   
+    width:100%;
+    margin-bottom: 5%;    
+    
+}
 
 
 .discografia{
-    height:650px;
-    font-size:40px;
-    background-color: black;
+    
     background-image: url("images/fonsinegre.jpeg");
     background-attachment: fixed;
     background-position: center;
@@ -318,56 +233,178 @@
     background-size: cover;
     color: whitesmoke;
     text-align: center;
-    padding-top:5%;
-    padding-bottom:29%;
+    
    
 }
 .ego{
-    height:90%;
-    width:45%;
-    border: solid whitesmoke 4px;
-    margin-left:27%;
+    
+    width:44%;
+    left:27%;
     margin-top: 5%;
     margin-bottom: 5%;
-    transition: transform 2s;
-
+    margin-bottom: 10%;    
+    position:relative;
 }
+
+
 .ego img{
-    width: 100%;
-    height:100%;
+    width: 100%;   
+    border:solid black;
     
 }
 
-.ego img:hover{
-    transform: scale(0.9);
+.ego:hover .overlay{
+    opacity:1;
 }
 
+
 .footer{
-    background-color:rgba(235, 197, 94, 0.527);
+    background-color:black;
+    opacity:80%;
     height: 40px;
-    color: black;
     text-align: right;
     padding-bottom: 5%;
     padding-right: 1%;
     text-decoration: none;
+    
 }
 
 .footer i {
     padding:1%;
-}
-
-.footer a:visited{
-    color:black;
-}
-
-.footer a:hover{
-    color: ivory;
-}
-
-#contacte{
-    text-align: left;
-    font-size: 107%;
     
+}
+
+
+#contacte {
+    text-align: left;    
     width:30%;
+    color: ivory;
+    font-weight: bold;
+    font-size: 20px;
+    position:relative;
+    top:200%;
+    
    
 }
+
+
+
+
+@media screen and (max-width: 900px) {
+    
+    
+    .header{
+        display: none;
+        
+    } 
+
+    #burguerButton{
+        text-decoration: none;
+        width:15%;
+        height:9%;
+        display:block;
+        position:fixed;
+        background-color:rgba(255, 255, 0, 0);
+        color: white;
+        border: none;
+        font-weight: bold;
+        left:85%;
+        
+    }
+    #burguerButton:hover{
+        color: black;
+    }
+
+    #cross{
+        font-weight: bold;
+        color: grey;
+        display:block;
+        background-color:none;
+        background-color:rgba(255, 255, 0, 0);
+        position: fixed;
+        border: none;
+        left:90%;
+        z-index: 2;
+    }
+
+    #cross:hover{
+        color: white;
+    }
+    .menu{        
+        height:100%;        
+        width:100%;
+        position:fixed;
+        z-index: 1;
+        background-color: rgba(0,0,0, 0.8); 
+        backdrop-filter: blur(10px);
+        
+    }
+
+    #llistaMobile {
+        width:45%;
+        height:83.3%;
+        list-style-type: none;
+        font-size: 40px;
+        padding-left: 30%;
+        margin-top:7%;
+       
+       
+        
+    }
+
+    #llistaMobile li {
+        height:18%;
+        
+    }
+
+   .menu-item-mobile{
+        color:grey;
+        text-align:center;
+        text-decoration: none;
+        
+   }
+
+   #rrssMobile {   
+        height:14%;
+        font-size: 18px;
+        text-align:center;
+   }
+    
+   #rrssMobile a{
+       padding:6%;
+   }
+   #bio-description {
+    font-size: 25px !important;
+    width:50% !important;
+    margin-left: 25% !important;
+    
+
+}
+.footer{
+    display: none;
+}
+
+.membres-bio{
+    font-size:10px !important;
+    
+}
+ 
+
+   
+    
+}
+
+@media screen and (min-width: 901px) {
+    #burguerButton{
+        display: none;
+    }    
+
+    
+}
+
+
+
+
+
+
+
