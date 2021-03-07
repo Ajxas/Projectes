@@ -138,8 +138,8 @@
 }
 
 
-.membres-section-img{
-    border:solid white;
+.section-img{
+    
     width:40%;
     margin-bottom: 10%;    
     position:relative;
@@ -166,7 +166,7 @@
     backdrop-filter: blur(10px);
 
 }
-.membres-section-img:hover .overlay{
+.section-img:hover .overlay{
     opacity:1;
 }
 .membres-bio{
