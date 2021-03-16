@@ -1,231 +1,189 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
 
-
-.header{
-    background-color: rgba(185, 158, 82, 0.281);
+.header {
+    background-color: rgb(255 255 255 / 38%);
     margin-bottom: 0px;
     width: 100%;
-    height:15%;
+    height: 15%;
     position: fixed;
-    opacity: 80%;
-    z-index:100;
-    
+    z-index: 100;
+    backdrop-filter: blur(13px);
+    -webkit-backdrop-filter: blur(13px);
 }
 
-
-
 #llista {
-    
     font-size: 170%;
     text-align: center;
     position: relative;
     top: 60%;
-  
-    
 }
 
-.menu-item:hover{
-    color:white;
-    
-
-
+.menu-item:hover {
+    color: black;
 }
 
-.menu-item{
-    transition:all ease 0.3s;
-    color:grey;
+.menu-item {
+    transition: all ease 0.3s;
+    color: grey;
 }
 
-
-
-
-
-#llista a{
-    padding: 1%; 
+#llista a {
+    padding: 1%;
 }
 
-#llista a:link{
-    
+#llista a:link {
     text-decoration: none;
 }
 
-
-
-
-  
-
-.rrss{
+.rrss {
     color: grey;
     text-align: right;
-    
 }
 
 .rrss a {
-    padding-right: 1%;;
+    padding-right: 1%;
 }
 
-
-
 .inici {
-    width:100%;
-    height:1040px;
+    width: 100%;
+    height: 1040px;
     background-image: url("images/fotonjunts.jpeg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.logo {
+    width: 60vmin;
+}
 
-
-.section{
+.section {
     padding-top: 14%;
     padding-bottom: 10%;
-    
 }
 
 .Bio {
-  
-   
     background-image: url("images/fonscolor.jpeg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
-    
-    
 }
 
-.titols{
-    font-size:70px;
-    color:white;
-    text-align:center;
+.titols {
+    font-size: 70px;
+    color: white;
+    text-align: center;
     padding-bottom: 5%;
-    opacity:70%;;
+    opacity: .7;
 }
 
 #bio-description {
     font-size: 230%;
-    text-align:  justify;
-    width:34%;
+    font-family: 'Shippori Mincho B1', serif;
+    text-align: justify;
+    width: 34%;
     margin-left: 33%;
     margin-right: 33%;
-    
     line-height: 180%;
     padding-bottom: 80px;
-    color:white;
-
+    color: white;
 }
 
-
-
-.membres{
-    
+.membres {
     background-image: url("images/fonstard.jpeg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width:100%;
-    
-       
+    width: 100%;
 }
 
-
-.section-img{
-    
-    width:40%;
-    margin-bottom: 10%;    
-    position:relative;
-    left:30%;
-}
-.membres-image{
-    width:100%;
-    
- 
+.section-img {
+    width: 40%;
+    margin-bottom: 10%;
+    position: relative;
+    left: 30%;
 }
 
+.membres-image {
+    width: 100%;
+}
 
-.overlay{
-    
-    background-color: rgba(0,0,0, 0.8);
-    width:100%;
-    height:100%;
-    position:absolute;
-    top:0;
-    bottom:0;
-    right:0;
-    opacity:0;
+.overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
     transition: .5s ease;
     backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 
+.section-img:hover .overlay {
+    opacity: 1;
 }
-.section-img:hover .overlay{
-    opacity:1;
-}
-.membres-bio{
-    font-family:"Satisfy";
+
+.membres-bio {
+    font-family: "Satisfy";
     font-size: 30px;
-    color:white;
-    position:absolute;
-    top:10%;
-    right:5%;
-    left:5%;
-    height:100%;
-    text-align:justify;
-    text-align:center;
-    line-height: 3.5;   
-
+    color: white;
+    position: absolute;
+    text-align: justify;
+    text-align: center;
+    line-height: 3.5;
+    display: flex;
+    justify-content: center;
 }
 
-
-.concerts-image{
-    width:30%;
+.concerts-image {
+    width: 30%;
     position: relative;
-    left:65%;
+    left: 65%;
 }
 
-.concerts-bio{
-    font-family:verdana;
-    font-size:20px;
-    font-size-adjust: 1,58;
-    color:white;
-    text-align:justify;
-    text-align:center;
+.concerts-bio {
+    font-family: verdana;
+    font-size: 20px;
+    font-size-adjust: 1, 58;
+    color: white;
+    text-align: justify;
+    text-align: center;
     line-height: 2.0;
-    
-    width:50%;
-    position:relative;
+    width: 50%;
+    position: relative;
     top: 9em;
 }
 
-
-.concerts{
+.concerts {
     background-image: url("images/fum.JPG");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
     background-color: rgba(0, 0, 0, 0.904);
 }
 
-.concerts-section{
-   
-    width:100%;
-    margin-bottom: 5%;    
-    
+.concerts-section {
+    width: 100%;
+    margin-bottom: 5%;
 }
 
-
-.discografia{
-    
+.discografia {
     background-image: url("images/fonsinegre.jpeg");
     background-attachment: fixed;
     background-position: center;
@@ -233,178 +191,133 @@
     background-size: cover;
     color: whitesmoke;
     text-align: center;
-    
-   
 }
-.ego{
-    
-    width:44%;
-    left:27%;
+
+.ego {
+    width: 44%;
+    left: 27%;
     margin-top: 5%;
     margin-bottom: 5%;
-    margin-bottom: 10%;    
-    position:relative;
+    margin-bottom: 10%;
+    position: relative;
 }
 
-
-.ego img{
-    width: 100%;   
-    border:solid black;
-    
+.ego img {
+    width: 100%;
+    border: 1px solid black;
 }
 
-.ego:hover .overlay{
-    opacity:1;
+.ego:hover .overlay {
+    opacity: 1;
 }
 
-
-.footer{
-    background-color:black;
-    opacity:80%;
+.footer {
+    background-color: black;
+    opacity: .8;
     height: 40px;
     text-align: right;
     padding-bottom: 5%;
     padding-right: 1%;
     text-decoration: none;
-    
+    font-family: 'Shippori Mincho B1', serif;
 }
 
 .footer i {
-    padding:1%;
-    
+    padding: 1%;
 }
 
-
 #contacte {
-    text-align: left;    
-    width:30%;
+    text-align: left;
+    width: 30%;
     color: ivory;
     font-weight: bold;
     font-size: 20px;
-    position:relative;
-    top:200%;
-    
-   
+    position: relative;
+    top: 200%;
 }
 
-
-
-
 @media screen and (max-width: 900px) {
-    
-    
-    .header{
+    .header {
         display: none;
-        
-    } 
-
-    #burguerButton{
+    }
+    #burguerButton {
         text-decoration: none;
-        width:15%;
-        height:9%;
-        display:block;
-        position:fixed;
-        background-color:rgba(255, 255, 0, 0);
+        width: 15%;
+        height: 9%;
+        display: block;
+        position: fixed;
+        background-color: rgba(255, 255, 0, 0);
         color: white;
         border: none;
         font-weight: bold;
-        left:85%;
-        
+        left: 75%;
     }
-    #burguerButton:hover{
+    #burguerButton:hover {
         color: black;
     }
-
-    #cross{
+    #cross {
         font-weight: bold;
         color: grey;
-        display:block;
-        background-color:none;
-        background-color:rgba(255, 255, 0, 0);
+        display: block;
+        background-color: rgba(255, 255, 0, 0);
         position: fixed;
         border: none;
-        left:90%;
+        left: 75%;
         z-index: 2;
     }
-
-    #cross:hover{
+    #cross:hover {
         color: white;
     }
-    .menu{        
-        height:100%;        
-        width:100%;
-        position:fixed;
+    .menu {
+        height: 100%;
+        width: 100%;
+        position: fixed;
         z-index: 1;
-        background-color: rgba(0,0,0, 0.8); 
+        background-color: rgba(0, 0, 0, 0.8);
         backdrop-filter: blur(10px);
-        
     }
-
     #llistaMobile {
-        width:45%;
-        height:83.3%;
+        width: 45%;
+        height: 83.3%;
         list-style-type: none;
         font-size: 40px;
         padding-left: 30%;
-        margin-top:7%;
-       
-       
-        
+        margin-top: 7%;
     }
-
     #llistaMobile li {
-        height:18%;
-        
+        height: 18%;
     }
-
-   .menu-item-mobile{
-        color:grey;
-        text-align:center;
+    .menu-item-mobile {
+        color: grey;
+        text-align: center;
         text-decoration: none;
-        
-   }
-
-   #rrssMobile {   
-        height:14%;
+    }
+    #rrssMobile {
+        height: 14%;
         font-size: 18px;
-        text-align:center;
-   }
-    
-   #rrssMobile a{
-       padding:6%;
-   }
-   #bio-description {
-    font-size: 25px !important;
-    width:50% !important;
-    margin-left: 25% !important;
-    
-
-}
-.footer{
-    display: none;
-}
-
-.membres-bio{
-    font-size:10px !important;
-    
-}
- 
-
-   
-    
+        text-align: center;
+    }
+    #rrssMobile a {
+        padding: 6%;
+    }
+    #bio-description {
+        font-size: 15px !important;
+        width: 50% !important;
+        margin-left: 25% !important;
+    }
+    .discotitol {
+        font-size: 60px;
+    }
+    .footer {
+        display: none;
+    }
+    .membres-bio {
+        font-size: 10px !important;
+    }
 }
 
 @media screen and (min-width: 901px) {
-    #burguerButton{
+    #burguerButton {
         display: none;
-    }    
-
-    
+    }
 }
-
-
-
-
-
-
-
